@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+@media screen and (min-width:768px){
+    .login article{
+        display: flex;
+    }
+}
+.login{
+    height: 100vh;
+    background-image: -webkit-linear-gradient(top left,  black,
+    gray,
+    rgb(194, 172, 46));
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login h3{
+    color: white;
+}
+.login form{
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.login #inputPass,#inputUser{
+    width: 95%;
+    height: 25px;
+    margin-bottom:10px ;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+}
+.login button{
+    height: 30px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+img{
+    border-radius: 10px;
+}

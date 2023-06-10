@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="css/style1.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script>
+            var h_over = new Image();
+            var h_out = new Image();
+            var h1_over = new Image();
+            var h1_out = new Image(); 
+            var h2_over = new Image();
+            var h2_out = new Image(); 
+            var h3_over = new Image();
+            var h3_out = new Image();  
+            function xuly()
+            {
+                h_over.src="img/mountain.jpg";
+                h_out.src="img/campuchia.jpg";
+                h1_over.src="img/malay.jpg";
+                h1_out.src="img/malay1.jpg";
+                h2_over.src="img/russia.jpg";
+                h2_out.src="img/russia1.jpg";
+                h3_over.src="img/us.jpg";
+                h3_out.src="img/us1.jpg";
+
+            }
+            function a(x)
+            {
+                if(x==0)
+                    document.getElementById("h").src=h_over.src;
+                else
+                    document.getElementById("h").src=h_out.src;
+            }
+            function b(x)
+            {
+                if(x==0)
+                    document.getElementById("h1").src=h1_over.src;
+                else
+                    document.getElementById("h1").src=h1_out.src;
+            }
+            function c(x)
+            {
+                if(x==0)
+                    document.getElementById("h2").src=h2_over.src;
+                else
+                    document.getElementById("h2").src=h2_out.src;
+            }
+            function d(x)
+            {
+                if(x==0)
+                    document.getElementById("h3").src=h3_over.src;
+                else
+                    document.getElementById("h3").src=h3_out.src;
+            }
+            function blue(){
+                document.bgColor="9AC5F4";
+            }
+            function pink(){
+                document.bgColor="FFAAC9";
+            }
+            function gray(){
+                document.bgColor="526D82";
+            }
+
+            </script>
+
+    </head>
+    <body onload="xuly()">
+
+        <header>
+
+            <input type ="checkbox" name ="" id ="chk1">
+            <div class="logo"><h1>Travel Tour</h1></div>
+                <div class="search-box">
+                    <form>
+                        <input type ="text" name ="search" id ="srch" placeholder="Search">
+                        <button type ="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="log-in/log.html">Log in</a></li>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                          
+                    </li>
+                </ul>
+                <div class="menu-bar">
+                    <label for="chk1">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                </div>
+            <!-- <img src="../main/img/logoipsum-215.svg" alt="" class="logo">
+            <div>
+                <b class="hotline"><i class="fa-solid fa-square-phone"></i>Hotline:0984.xxx.xxx</b>
+                <div class="color">
+                    <div id="c1"></div>
+                    <div id="c2"></div>
+                    <div id="c3"></div>
+
+                </div>
+            </div> -->
+           
+        </header>
+        <!-- <div class="menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <nav>
+            <a href="">Trang chủ</a>
+            <a href="">Giới thiệu</a>
+            <a href="in4/tour.html">Tour trong nước</a>
+            <a href="">Tour quốc tế</a>
+            <a href="">Tin tức</a>
+            <a href="">Liên hệ</a> 
+            <a href="">Khuyến mãi</a>
+        </nav> -->
+            
+
+            <div class="slide">
+                <img id="banner" alt="" width="100%">
+                <i class="bi-arrow-left-circle" onclick="prev()"></i>
+                <i class="bi-arrow-right-circle" onclick="next()"></i>
+                <div class="list">
+                    <span id="1">.</span>
+                    <span id="2">.</span>
+                    <span id="3">.</span>
+                </div>
+            </div>
+            <input type="button" class="change-color" id="btn1" value="blue" onclick="blue()">
+            <input type="button" class="change-color" id="btn2" value="pink" onclick="pink()">
+            <input type="button" class="change-color" id="btn3" value="gray" onclick="gray()">
+            <div class="about-section">
+                <div class="inner">
+                    <h1>About us</h1>
+                    <p class="text-sec">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos enim eaque, consequatur fugit libero voluptatibus incidunt velit est, ipsum esse dolor tempore numquam nulla nam obcaecati a autem quae cupiditate.
+                    </p>
+                    <div class="skill">
+                        <span>Web Design </span>
+                        <span>Photoshop </span>
+                        <span>Coding </span>
+        
+                    </div>
+                </div>
+            </div>
+            
+        <main>
+            
+
+            <section>
+                <h2>Danh sách tour</h2> 
+            <section class="list-tour">
+                <article class="container">
+                    <img class="image" id="h" src="img/mountain.jpg" onmouseover="a(0)" onmouseout="a(1)"/>
+                    <div class="middle">
+                        <div class="text" >More than</div>
+                    </div>
+                    <p><b> Tour Campuchia</b></p>
+                    <p>12.000.000đ</p>
+                </article>
+                <article class="container">
+                    <img class="image" id="h1" src="img/malay.jpg" onmouseover="b(0)" onmouseout="b(1)"/>
+                    <div class="middle">
+                        <div class="text">More than</div>
+                    </div>
+                    <p><b> Tour Malaysia</b></p>
+                    <p>12.000.000đ</p>
+                </article>
+                <article class="container">
+                    <img class="image" id="h2" src="img/russia.jpg" onmouseover="c(0)" onmouseout="c(1)"/> 
+                    <div class="middle">
+                        <div class="text">More than</div>
+                    </div>
+                    <p><b> Tour Nga</b></p>
+                    <p>12.000.000đ</p>
+                </article>
+                <article class="container">
+                    <img class="image" id="h3" src="img/us.jpg" onmouseover="d(0)" onmouseout="d(1)"/>
+                    <div class="middle">
+                        <div class="text">More than</div>
+                    </div>
+                    <p><b> Tour Mỹ</p></b>
+                    <p>Giá: 12.000.000đ</p>
+                </article>
+            </section>
+            <h2>Phản hồi của khách hàng</h2>
+            <section class="feedback">
+                <article>
+                    <img src="img/man-1.jpg">
+                    <p>Khách hàng 1</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span><i>"Rất tuyệt vời"</i></span>
+                </article>
+                <article>
+                    <img src="img/woman-3.jpg">
+                    <p>Khách hàng 2</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span>
+                        <i>
+                            "Tôi thích công ty du lịch này"
+                        </i>
+                    </span>
+                </article>
+                <article>
+                    <img src="img/man-2.jpg">
+                    <p>Khách hàng 3</p>
+                    <p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
+                    <span>
+                        <i>
+                            "Thật là một trải nghiệm tuyệt vời"
+                        </i>
+                    </span>
+                    
+                </article>
+            </section>
+            <!-- <aside>đây là aside </aside> -->
+            
+            <h2>Du lịch quốc tế</h2>
+            <div id="linear-grd"></div>
+            <section class="grid-container">
+                <div class="item1">
+                    <img src="img/bon-bon.jpg" alt="" class="img-ovr" id="myImg">
+                    <div class="image-overlay">
+                        <div class="overlay1">Anh Quốc</div>
+                    </div>
+                    <p>Du lịch Anh Quốc 2023 cùng VieTourist với giá trọn gói và rẻ hàng đầu thị trường, chất lượng dịch vụ tại Anh Quốc 3- 4 sao, hàng không 4 sao. Khởi hành từ Sài Gòn và Hà Nội. Khám phá những địa danh nổi tiếng nhất nước Anh như: London, Manchester, Stradford, Oxford, Cambridge,...</p>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                <div class="item2">
+                    <img src="img/girl.jpg" alt="" class="img-ovr" id="myImg">
+                    <div class="image-overlay">
+                        <div class="overlay2">New York</div>
+                    </div>
+                    <p>Du lịch Mỹ</p>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                <div class="item3">
+                    <img src="img/old-town.jpg" alt="" class="img-ovr" id="myImg">
+                    <div class="image-overlay">
+                        <div class="overlay3">Tp.Hồ Chí Minh</div>
+                    </div>    
+                    <p>Du lịch Việt Nam</p>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                <div class="item4">
+                    <img src="img/road.jpg" alt="" class="img-ovr" id="myImg">
+                    <div class="image-overlay">
+                        <div class="overlay4">Miền Tây nước Mỹ</div>
+                    </div>
+                    <p>Du lịch Mỹ</p>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+                <div class="item5">
+                    <img src="img/sky.jpg" alt="" class="img-ovr" id="myImg">
+                    <div class="image-overlay">
+                        <div class="overlay5">Canada</div>
+                    </div>                   
+                    <p>Du lịch </p>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </section>
+
+            <h3>THƯ VIỆN ẢNH CỦA KHÁCH</h3>
+
+            <section class="gallery">
+
+                <div class="column-3">
+                    <img src="img/gallery1.jpg">
+                    <img src="img/gallery2.jpg">
+                    <img src="img/gallery3.jpg">
+                </div>
+                <div class="column-4">
+                    <img src="img/gallery4.jpg">
+                    <img src="img/gallery5.jpg">
+                    <img src="img/gallery6.jpg">
+                    <img src="img/gallery7.jpg">
+                </div>
+                <div class="column-3">
+                    <img src="img/gallery8.jpg">
+                    <img src="img/gallery9.jpg">
+                    <img src="img/gallery10.jpg">
+                </div>
+                <div class="column-4">
+                    <img src="img/gallery11.jpg">
+                    <img src="img/gallery12.jpg">
+                    <img src="img/gallery13.jpg">
+                    <img src="img/gallery14.jpg">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <div>
+                    <h2>Liên Hệ</h2><hr/>
+                    <p>phường Tân Chánh Hiệp, Q12, tp.HCM</p>
+                    <p>Email: logoipsum@gmail.com</p>
+                    <p>Điện thoại: 0124122312 - 0247283428</p>
+                    <p>Mã số thuế: 0342342423</p>
+                    <p>GPKD lữ hành quốc tế 79-400/2015/TCDL</p>
+                </div>
+                <div>
+                    <h2>Bản đồ</h2><hr/>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.443592406507!2d106.62525347533015!3d10.853826357760699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1685066249578!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                </div>
+                <div>
+                    <h2>Kết nối</h2><hr/>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <p>Đăng ký nhận tin khuyến mãi</p>
+                    <input type="text" placeholder="Nhập email nhận khuyến mãi" width="90%"/>
+                    <button class="btn">Đăng ký</button>
+                </div>
+            </section>
+        </footer>
+        
+
+        <img class="zalo" src="img/zalo.svg" alt="">
+        <img class="messenger" src="img/mess.svg" alt="">
+        <script src="../main/js/action.js"></script>
+    </body>
+</html>
